@@ -1,0 +1,19 @@
+Log created: 2020-08-19T22:53:29.796029000Z
+Process ID:  93193 (0x16c09)
+Parent PID:  76207 (0x129af)
+Executable:  /usr/lib/virtualbox/VirtualBoxVM
+Arg[0]: /usr/lib/virtualbox/VirtualBoxVM
+Arg[1]: --comment
+Arg[2]: my_project_default_1597861325319_5139
+Arg[3]: --startvm
+Arg[4]: 18ebe5eb-82c1-4e63-b3aa-487163f5eb2b
+Arg[5]: --no-startvm-errormsgbox
+Arg[6]: --separate
+
+!!Assertion Failed!!
+Expression: state <= 1 && ( (state == 0 && count == 0) || (state == 1 && count < PR_UINT32_MAX/2))
+Location  : /build/virtualbox-SRwERU/virtualbox-6.1.10-dfsg/src/libs/xpcom18a4/xpcom/components/nsComponentManager.cpp(931) virtual nsrefcnt nsComponentManagerImpl::AddRef()
+Stack     :
+00007fc099d25e11 VBoxRT.so + 0x173e11
+
+AddRef: illegal refcnt=3221225469 state=2
